@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>DSC Events</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+	<link rel="shortcut icon" href="./assets/images/logo1_diq_icon.ico" />	
+	<script src="https://kit.fontawesome.com/7862cd7ce6.js"></script>
+	<script src="https://code.jquery.com/jquery-2.1.0.min.js"
+		integrity="sha256-8oQ1OnzE2X9v4gpRVRMb1DWHoPHJilbur1LP9ykQ9H0=" crossorigin="anonymous">
+		</script>
+	<script>
+		function hideLoader() {
+			$('#loading').hide();
+		}
+		$(window).ready(hideLoader);
+		// Strongly recommended: Hide loader after 20 seconds, even if the page hasn't finished loading
+		setTimeout(hideLoader, 20000);
+	</script>
+
+	<style>
+		#loading {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 9999999;
+			background-color: #ffffff;
+			padding-top: 200px;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+
+		@media only screen and (max-device-width: 1024px) {
+
+			#lode {
+				width: 500px;
+				height: 300px;
+			}
+		}
+
+		@media only screen and (max-width: 500px) {
+			#doodle {
+				width: 100%;
+			}
+
+			#lode {
+				width: 300px;
+				height: 175px;
+			}
+		}
+	</style>
+</head>
+
+<body>
+	<div id="loading">
+		<center>
+			<img id="lode" src="assets/images/background.gif" width="600px" height="350px">
+		</center>
+	</div>
+	<nav class="navbar navbar-dark navbar-expand-lg fixed-top bg-white" id="mainNav">
+		<div class="container"><a class="navbar-brand" href="index.html"><img src="./assets/images/logo2.png"
+					width="80px" height="50px"></a><button data-toggle="collapse" data-target="#navbarResponsive"
+				class="navbar-toggler navbar-toggler-right" type="button" data-toogle="collapse"
+				aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i
+					class="fa fa-bars"></i></button>
+			<div class="collapse navbar-collapse" id="navbarResponsive">
+				<ul class="nav navbar-nav ml-auto text-uppercase">
+					<li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.html"
+							style="color:#ea4335">Home</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="gallery.html"
+							style="color:#34a853">Gallery</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="team.html"
+							style="color:#fbbc05">Team</a></li>
+					<li class="nav-item" role="presentation"><a class="nav-link js-scroll-trigger" href="index.html#contact"
+							style="color:#4285f4;">Contact</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<div class="container" style="margin-top:180px;">
+
+		<div class="row" style="height: 100vh;">
+			<div class="col-lg-12 text-center">
+				<img id="doodle" src="assets/images/events.gif">
+				<h2 class="text-uppercase" style="margin-top: 40px;">Events this semester</h2>
+				<h3 class="text-muted section-subheading">Here to meet and learn right? Of course</h3>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-lg-12">
+				<ul class="list-group timeline">
+					<li class="list-group-item">
+						<div class="timeline-image my-auto"><i class="fab fa-android fa-5x" style="margin-top: 20%"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4>8 SEP 2019</h4>
+								<h4 class="subheading">Android Orientation</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted">Android workshop focusing on imparting basic knowledge about
+									android development to juniors. A Calculator app was made with basic arithimetic
+									operations</p>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item timeline-inverted">
+						<div class="timeline-image"><i class="fab fa-android fa-5x" style="margin-top: 20%"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4>31 AUGUST 2019</h4>
+								<h4 class="subheading">Android Orientation</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted">Android workshop focusing on imparting basic knowledge about
+									android development to juniors. A greeting app was made.</p>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item">
+						<div class="timeline-image"><i class="fas fa-cloud fa-5x" style="margin-top: 20%"></i>
+						</div>
+						<div class="timeline-panel">
+							<div class="timeline-heading">
+								<h4>27 JULY 2019</h4>
+								<h4 class="subheading">Google Cloud Jam</h4>
+							</div>
+							<div class="timeline-body">
+								<p class="text-muted">From containerizing applications to creating virtual machines,
+									Study JAM was oriented to certain Cloud topics and skill levels. </p>
+							</div>
+						</div>
+					</li>
+					<li class="list-group-item timeline-inverted">
+						<div class="timeline-image">
+							<h4>Be Part<br>&nbsp;Of Our<br>&nbsp;Story!</h4>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div style="margin-top: 60px;">
+		<div style="background-color:#4285f411;text-align:center;text-align: center;">
+			<p>Developed and Designed while having 🍺 by <a href="https://www.github.com/heromayank2"
+					style="text-decoration: none;">Mayank Goyal </a>Cheers!</p>
+		</div>
+	</div>
+	<script src="./js/jquery.min.js"></script>
+	<script src="./bootstrap/js/bootstrap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+	<script src="./js/agency.js"></script>
+</body>
+
+</html>
